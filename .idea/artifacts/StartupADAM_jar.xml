@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StartupADAM:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StartupADAM_jar</output-path>
+    <root id="archive" name="StartupADAM.jar">
+      <element id="module-output" name="StartupADAM" />
+    </root>
+  </artifact>
+</component>

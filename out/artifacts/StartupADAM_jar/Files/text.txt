@@ -1,0 +1,5 @@
+Test  "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"  google.com
+Musicbee  "C:\Program Files (x86)\MusicBee\MusicBee.exe"  not set  
+WoT  "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"  not set
+World  "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"  not set
+World of tanks  "c:\program files (x86)\mozilla firefox\firefox.exe"  not set
