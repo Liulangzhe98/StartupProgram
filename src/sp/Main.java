@@ -18,9 +18,8 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class Main extends Application
 {
@@ -54,10 +53,9 @@ public class Main extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        System.out.println(Reference.TEKSTFOLDER);
         //Makes it more readable
-        String newLine = System.getProperty("line.separator");//This will retrieve line separator dependent on OS.
-        System.out.println(newLine);
+//        String newLine = System.getProperty("line.separator");//This will retrieve line separator dependent on OS.
+//        System.out.println(newLine);
 //        FILE MAKING
         if(!tekstfolder.exists() || !presetFolder.exists())
         {
@@ -185,18 +183,14 @@ public class Main extends Application
 
         //Path column
         TableColumn<Program, String> pathColumn = new TableColumn<>("Path");
-        pathColumn.setMinWidth(300);
+        pathColumn.setMinWidth(350);
         pathColumn.setCellValueFactory(new PropertyValueFactory<>("path"));
 
         //Url column
         TableColumn<Program, String> urlColumn = new TableColumn<>("Url");
-        urlColumn.setMinWidth(250);
+        urlColumn.setMinWidth(255);
         urlColumn.setCellValueFactory(new PropertyValueFactory<>("url"));
 
-        //Selected Column
-        TableColumn<Program, String> selectedColumn = new TableColumn<>("Selected");
-        selectedColumn.setMinWidth(50);
-        selectedColumn.setCellValueFactory(new PropertyValueFactory<>("selected"));
 
         /*Table rest
         Name input */
@@ -229,9 +223,11 @@ public class Main extends Application
 
 
         table = new TableView<>();
-        table.getColumns().addAll(nameColumn, pathColumn, urlColumn, selectedColumn);
+        table.getColumns().addAll(nameColumn, pathColumn, urlColumn);
+        table.setPrefWidth(400);
         table.setItems(getPrograms());
         table.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+
 
         /*LAYOUTMANAGER
         Layout sceneStart*/
@@ -353,7 +349,6 @@ public class Main extends Application
             program.setName(nameInput.getText());
             program.setPath(pathInput.getText().replace("\"",""));
             program.setUrl(urlInput.getText());
-            program.setSelected("");
             writeToTextFile(nameInput.getText().trim(), pathInput.getText().trim(), urlInput.getText().trim());
             table.getItems().add(program);
             nameInput.clear();
@@ -372,20 +367,27 @@ public class Main extends Application
 
 
     //Select progams for a preset
+    //TODO: Make that the user knows which program is selected
     public void selectButtonClicked()
     {
         try
         {
             ObservableList<Program> programSelected;
+            ObservableList<Integer> indicies;
             String Presetname = MyFileReader.prognameGet(Reference.PRESETFOLDER, Reference.test).toString().split("  ")[0].trim();
             List<String> strProgs = new ArrayList<>();
+            indicies = table.getSelectionModel().getSelectedIndices();
             programSelected = table.getSelectionModel().getSelectedItems();
-            System.out.println("Number: " + table.getSelectionModel().getSelectedItems());
-            System.out.println("Indicies: " + table.getSelectionModel().getSelectedIndices().toString());
-//            for(int i= 0; i < programSelected.size());
-            //            {
-            //
-            //            }
+            System.out.println("Number: " + table.getSelectionModel().getSelectedItems().size());
+            System.out.println("Indicies: " + indicies.toString());
+            for(int i= 0; i < programSelected.size(); i++)
+            {
+                System.out.println("NUM: " + indicies.get(i));
+//                programs.set(indicies.get(i),);
+            }
+
+
+
             for(int i= 0; i < programSelected.size(); i++)
             {
                 String test = programSelected.toString().split(",")[i].replace("[","").replace("]", "").trim().split("  ")[0];
@@ -611,8 +613,7 @@ public class Main extends Application
                 {
                     programs.add(new Program(MyFileReader.prognameGet(Reference.TEKSTFOLDER, i + 1).toString().split("  ")[0],
                                              MyFileReader.prognameGet(Reference.TEKSTFOLDER, i + 1).toString().split("  ")[1].replace("\"", ""),
-                                             MyFileReader.prognameGet(Reference.TEKSTFOLDER, i + 1).toString().split("  ")[2],
-                                             ""));
+                                             MyFileReader.prognameGet(Reference.TEKSTFOLDER, i + 1).toString().split("  ")[2]));
                 }
             }
         }
@@ -677,7 +678,6 @@ public class Main extends Application
 
 
     //Write selected programs to the right Preset in Presets.txt
-    //TODO: Make that the user knows which program is selected
     public void writeSelected(String PresetName,  List<String> Progs)
     {
         try

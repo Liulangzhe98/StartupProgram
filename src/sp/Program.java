@@ -2,7 +2,7 @@ package sp;
 
 public class Program
 {
-    private String name, path, url, selected;
+    private String name, path, url;
 
 
     @Override
@@ -16,11 +16,10 @@ public class Program
         this.name = "";
         this.path = "";
         this.url = "";
-        this.selected = "";
     }
 
 
-    public Program(String name, String path, String url, String selected){
+    public Program(String name, String path, String url){
         this.name = name;
         this.path = path;
         if(url.contains("not set"))
@@ -33,7 +32,6 @@ public class Program
         {
             this.url = url;
         }
-        this.selected = selected;
     }
 
     public String getName()
@@ -66,18 +64,8 @@ public class Program
         this.url = url;
     }
 
-    public String getSelected()
-    {
-        return selected;
-    }
-
-    public void setSelected(String selected)
-    {
-        this.selected = selected;
-    }
-
     public static Program with(String path, String name, String url, String selected)
     {
-        return new Program(path, name, url, selected);
+        return new Program(path, name, url);
     }
 }
