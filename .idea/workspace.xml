@@ -30,13 +30,12 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47765362">
-              <caret line="770" column="5" selection-start-line="770" selection-start-column="5" selection-end-line="770" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.51536316">
+              <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
               <folding>
-                <element signature="e#1606#1630#0" expanded="false" />
+                <element signature="e#1630#1654#0" expanded="false" />
                 <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
                 <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-                <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
                 <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
                 <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
                 <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
@@ -50,14 +49,14 @@
                 <element signature="method#replacer#0;class#Main#0" expanded="false" />
                 <element signature="method#alertBox#0;class#Main#0" expanded="false" />
                 <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-                <marker date="1448483261111" expanded="false" signature="2171:3142" placeholder="..." />
-                <marker date="1448483261111" expanded="false" signature="3207:4374" placeholder="..." />
-                <marker date="1448483261111" expanded="false" signature="4413:5502" placeholder="..." />
-                <marker date="1448483261111" expanded="false" signature="5518:6071" placeholder="..." />
-                <marker date="1448483261111" expanded="false" signature="6106:7825" placeholder="..." />
-                <marker date="1448483261111" expanded="false" signature="7888:8925" placeholder="..." />
-                <marker date="1448483261111" expanded="false" signature="8963:10041" placeholder="..." />
-                <marker date="1448483261111" expanded="false" signature="10086:10574" placeholder="..." />
+                <marker date="1448484721570" expanded="false" signature="2331:3302" placeholder="..." />
+                <marker date="1448484721570" expanded="false" signature="3367:4534" placeholder="..." />
+                <marker date="1448484721570" expanded="true" signature="4573:5740" placeholder="..." />
+                <marker date="1448484721570" expanded="false" signature="5756:6309" placeholder="..." />
+                <marker date="1448484721570" expanded="false" signature="6344:8063" placeholder="..." />
+                <marker date="1448484721570" expanded="false" signature="8126:9163" placeholder="..." />
+                <marker date="1448484721570" expanded="true" signature="9201:10303" placeholder="..." />
+                <marker date="1448484721570" expanded="false" signature="10348:10836" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -89,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/out/artifacts/StartupADAM_jar/Files/Presets.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -621,10 +620,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1606#1630#0" expanded="false" />
+            <element signature="e#1630#1654#0" expanded="false" />
             <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
@@ -638,14 +636,14 @@
             <element signature="method#replacer#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-            <marker date="1448483261111" expanded="false" signature="2171:3142" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="3207:4374" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="4413:5502" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="5518:6071" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="6106:7825" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="7888:8925" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="8963:10041" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="10086:10574" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="2331:3302" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="3367:4534" placeholder="..." />
+            <marker date="1448484721570" expanded="true" signature="4573:5740" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="5756:6309" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="6344:8063" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="8126:9163" placeholder="..." />
+            <marker date="1448484721570" expanded="true" signature="9201:10303" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="10348:10836" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -705,10 +703,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
           <folding>
-            <element signature="e#1606#1630#0" expanded="false" />
+            <element signature="e#1630#1654#0" expanded="false" />
             <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
@@ -722,14 +719,14 @@
             <element signature="method#replacer#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-            <marker date="1448483261111" expanded="false" signature="2171:3142" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="3207:4374" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="4413:5502" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="5518:6071" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="6106:7825" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="7888:8925" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="8963:10041" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="10086:10574" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="2331:3302" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="3367:4534" placeholder="..." />
+            <marker date="1448484721570" expanded="true" signature="4573:5740" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="5756:6309" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="6344:8063" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="8126:9163" placeholder="..." />
+            <marker date="1448484721570" expanded="true" signature="9201:10303" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="10348:10836" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -792,7 +789,7 @@
     <entry file="file://$PROJECT_DIR$/out/artifacts/StartupADAM_jar/Files/Presets.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -832,13 +829,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47765362">
-          <caret line="770" column="5" selection-start-line="770" selection-start-column="5" selection-end-line="770" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.51536316">
+          <caret line="148" column="41" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
           <folding>
-            <element signature="e#1606#1630#0" expanded="false" />
+            <element signature="e#1630#1654#0" expanded="false" />
             <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
@@ -852,14 +848,14 @@
             <element signature="method#replacer#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-            <marker date="1448483261111" expanded="false" signature="2171:3142" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="3207:4374" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="4413:5502" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="5518:6071" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="6106:7825" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="7888:8925" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="8963:10041" placeholder="..." />
-            <marker date="1448483261111" expanded="false" signature="10086:10574" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="2331:3302" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="3367:4534" placeholder="..." />
+            <marker date="1448484721570" expanded="true" signature="4573:5740" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="5756:6309" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="6344:8063" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="8126:9163" placeholder="..." />
+            <marker date="1448484721570" expanded="true" signature="9201:10303" placeholder="..." />
+            <marker date="1448484721570" expanded="false" signature="10348:10836" placeholder="..." />
           </folding>
         </state>
       </provider>

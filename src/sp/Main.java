@@ -26,7 +26,7 @@ public class Main extends Application
     //Set all public vars
     Stage window;
     Scene sceneMain, sceneTable, sceneStart;
-    Label Header;
+    Label Header, SelectedProgsForPreset;
     Button[] buttons, EditBtn;
     Button addBtn, deleteBtn, selectBtn, deselectBtn, backBtn, acceptBtn, renamePresetsBtn;
     TextField nameInput, pathInput, urlInput;
@@ -67,6 +67,9 @@ public class Main extends Application
         Text on sceneStart window*/
         Header = new Label("Set your presets");
         Header.setAlignment(Pos.CENTER);
+
+        SelectedProgsForPreset = new Label("The selected programs for");
+        SelectedProgsForPreset.setAlignment(Pos.CENTER_LEFT);
 
         /*Buttons
         "hardcoded" buttons */
@@ -148,7 +151,7 @@ public class Main extends Application
                 Reference.test = j + 1;
                 window.setScene(sceneTable);
                 window.setTitle("Startup Program: " + buttons[j].getText().trim());
-                System.out.println(inputscnt);
+                SelectedProgsForPreset.setText(SelectedProgsForPreset.getText() + " " + buttons[j].getText().trim() + ": ");
                 window.show();
             });
 
@@ -286,7 +289,7 @@ public class Main extends Application
         hBox2.getChildren().addAll(vBoxAlign, vBox, vBox1, backBtn);
 
         VBox vBox3 = new VBox();
-        vBox3.getChildren().addAll(table, hBox2);
+        vBox3.getChildren().addAll(table, SelectedProgsForPreset, hBox2);
 
         HBox layoutTable = new HBox();
         layoutTable.setPadding(new Insets(10));
@@ -377,21 +380,19 @@ public class Main extends Application
             List<String> strProgs = new ArrayList<>();
             indicies = table.getSelectionModel().getSelectedIndices();
             programSelected = table.getSelectionModel().getSelectedItems();
-            System.out.println("Number: " + table.getSelectionModel().getSelectedItems().size());
-            System.out.println("Indicies: " + indicies.toString());
-            for(int i= 0; i < programSelected.size(); i++)
-            {
-                System.out.println("NUM: " + indicies.get(i));
-
-            }
-
-
-
             for(int i= 0; i < programSelected.size(); i++)
             {
                 String test = programSelected.toString().split(",")[i].replace("[","").replace("]", "").trim().split("  ")[0];
                 strProgs.add(test);
             }
+
+
+            System.out.println("Number: " + strProgs.toString());
+            System.out.println("Indicies: " + indicies.toString());
+            String Temp = " " + Presetname + ": " + strProgs.toString().replace("[","").replace("]","");
+            SelectedProgsForPreset.setText(SelectedProgsForPreset.getText() + Temp);
+            System.out.println(SelectedProgsForPreset.toString());
+
             writeSelected(Presetname, strProgs);
         } catch (Exception e)
         {
@@ -622,8 +623,6 @@ public class Main extends Application
         }
         return programs;
     }
-
-
 
 
     //Write table to text.txt
