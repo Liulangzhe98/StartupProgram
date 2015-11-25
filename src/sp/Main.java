@@ -174,7 +174,6 @@ public class Main extends Application
         }
 
 
-
         /*Table Columns
         Name column */
         TableColumn<Program, String> nameColumn = new TableColumn<>("Name");
@@ -383,7 +382,7 @@ public class Main extends Application
             for(int i= 0; i < programSelected.size(); i++)
             {
                 System.out.println("NUM: " + indicies.get(i));
-//                programs.set(indicies.get(i),);
+
             }
 
 
@@ -623,6 +622,8 @@ public class Main extends Application
         }
         return programs;
     }
+
+
 
 
     //Write table to text.txt
