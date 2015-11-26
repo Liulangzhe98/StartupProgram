@@ -1,2 +1,2 @@
-Test
-World of Tanks
+Test  [World]
+World of Tanks  [Test, Musicbee, WoT, World, World of tanks]

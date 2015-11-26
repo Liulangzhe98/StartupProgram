@@ -44,6 +44,7 @@ public class Main extends Application
     int inputscnt;
     boolean stringGev = false;
     Runtime rt = Runtime.getRuntime();
+    String setSelected = "The selected programs for";
 
     public static void  main(String[] args)
     {
@@ -147,11 +148,10 @@ public class Main extends Application
             EditBtn[i].setAlignment(Pos.BASELINE_LEFT);
             final int j = i;
             EditBtn[i].setOnAction(e -> {
-//                myListenerEditing(j);
                 Reference.test = j + 1;
                 window.setScene(sceneTable);
                 window.setTitle("Startup Program: " + buttons[j].getText().trim());
-                SelectedProgsForPreset.setText(SelectedProgsForPreset.getText() + " " + buttons[j].getText().trim() + ": ");
+                setSelectedProgsForPreset(buttons[j].getText().trim());
                 window.show();
             });
 
@@ -369,30 +369,19 @@ public class Main extends Application
 
 
     //Select progams for a preset
-    //TODO: Make that the user knows which program is selected
     public void selectButtonClicked()
     {
         try
         {
             ObservableList<Program> programSelected;
-            ObservableList<Integer> indicies;
             String Presetname = MyFileReader.prognameGet(Reference.PRESETFOLDER, Reference.test).toString().split("  ")[0].trim();
             List<String> strProgs = new ArrayList<>();
-            indicies = table.getSelectionModel().getSelectedIndices();
             programSelected = table.getSelectionModel().getSelectedItems();
             for(int i= 0; i < programSelected.size(); i++)
             {
                 String test = programSelected.toString().split(",")[i].replace("[","").replace("]", "").trim().split("  ")[0];
                 strProgs.add(test);
             }
-
-
-            System.out.println("Number: " + strProgs.toString());
-            System.out.println("Indicies: " + indicies.toString());
-            String Temp = " " + Presetname + ": " + strProgs.toString().replace("[","").replace("]","");
-            SelectedProgsForPreset.setText(SelectedProgsForPreset.getText() + Temp);
-            System.out.println(SelectedProgsForPreset.toString());
-
             writeSelected(Presetname, strProgs);
         } catch (Exception e)
         {
@@ -557,9 +546,9 @@ public class Main extends Application
                 String line2;
                 while ((line2 = file2.readLine()) != null)
                 {
-                    if(line2.contains(program1))
+                    if(line2.contains(program1 + "  \""))
                     {
-                        System.out.println(line2.contains("not set"));
+                        System.out.println("not set: " + line2.contains("not set"));
                         Path = "\"" + line2.split("\"")[1] + "\"";
                         //Has an URL
                         if (!line2.contains("not set"))
@@ -705,7 +694,7 @@ public class Main extends Application
                         String TempProgs = Progs.toString().split(", ")[i].replace("[","").replace("]","");
                         if(!Temp.contains(TempProgs))
                         {
-                            Temp = "[" + Temp + ", " + TempProgs + "]";
+                            Temp = Temp + ", " + TempProgs;
                             System.out.println(Temp);
                         }
 
@@ -747,14 +736,22 @@ public class Main extends Application
                     String Temp = line.split("\\[")[1].replace("]","");
                     for (int i = 0; i < Progs.size(); i++)
                     {
-                        String TempProgs = Progs.toString().split(", ")[i].replace("[","").replace("]","");
-                        if(Temp.contains(TempProgs))
+                        String TempProgs = Progs.toString().split(", ")[i].replace("[", "").replace("]", "");
+                        if (Temp.contains(TempProgs))
                         {
-                            Temp = "[" + Temp.replace(", "+TempProgs,"") + "]";
+                            if(line.contains(TempProgs+ ","))
+                            {
+                                Temp = Temp.replace(TempProgs + ", ", "");
+                            }
+                            if(!line.contains(TempProgs+","))
+                            {
+                                Temp = Temp.replace(TempProgs, "");
+                            }
                         }
                     }
-                    input = input.replace(line, PresetName + "  " + Temp);
-                    System.out.println("INP: "+ input);
+                    input = input.replace(line, PresetName + "  " + "[" + Temp + "]");
+                    if(input.contains("[]"))
+                        input = input.replace("[]","");
                 }
             }
             fileOut.write(input.getBytes());
@@ -762,6 +759,37 @@ public class Main extends Application
             file.close();
             presetFolder.delete();
             tempFolder.renameTo(presetFolder);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+
+    //Set the text for selected
+    public void setSelectedProgsForPreset(String PresetName)
+    {
+        try
+        {
+            BufferedReader file = new BufferedReader(new FileReader(Reference.PRESETFOLDER));
+            String line;
+            String input = "";
+            while ((line = file.readLine()) != null)
+            {
+                input += line + "\n";
+                System.out.println(line.startsWith(PresetName));
+                if(line.startsWith(PresetName) && line.contains("["))
+                {
+                    SelectedProgsForPreset.setText(setSelected + " " +line.toString().split("\\[")[0]+ ": " + line.toString().split("\\[")[1].replace("]",""));
+                }
+                if(line.startsWith(PresetName) && !line.contains("["))
+                {
+                    SelectedProgsForPreset.setText(setSelected + " " +line.toString().split("\\[")[0]+ ": ");
+                }
+
+            }
+            file.close();
         }
         catch (Exception e)
         {
