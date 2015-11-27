@@ -15,6 +15,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -28,7 +29,10 @@ public class Main extends Application
     Scene sceneMain, sceneTable, sceneStart;
     Label Header, SelectedProgsForPreset;
     Button[] buttons, EditBtn;
-    Button addBtn, deleteBtn, selectBtn, deselectBtn, backBtn, acceptBtn, renamePresetsBtn;
+    Button addBtn, deleteBtn,
+           selectBtn, deselectBtn,
+           acceptBtn, renamePresetsBtn,
+           backBtn, fileChooserBtn ;
     TextField nameInput, pathInput, urlInput;
     TextField [] inputs;
     TableView<Program> table;
@@ -40,6 +44,7 @@ public class Main extends Application
     File presetFolder = new File(Reference.PRESETFOLDER);
     File testFolder = new File(Reference.TESTFOLDER);
 
+    final FileChooser fileChooser = new FileChooser();
     int buttonheight;
     int inputscnt;
     boolean stringGev = false;
@@ -100,6 +105,14 @@ public class Main extends Application
 
         renamePresetsBtn = new Button("Clear presets list");
         renamePresetsBtn.setOnAction(e -> deletePresetButtonClicked());
+
+        fileChooserBtn = new Button("Get the path of your program");
+        fileChooserBtn.setOnAction(e -> {
+            File file = fileChooser.showOpenDialog(window);
+            System.out.println(file.getPath());
+            pathInput.setText(file.getPath());
+        });
+
 
         /*Var buttons
 
@@ -198,7 +211,6 @@ public class Main extends Application
         Name input */
         nameInput = new TextField();
         nameInput.setPromptText("Program");
-        nameInput.setMinWidth(100);
         nameInput.setOnKeyPressed(keyEvent ->
         {
             if (keyEvent.getCode() == KeyCode.ENTER)
@@ -275,6 +287,9 @@ public class Main extends Application
 
         HBox hBoxempty = new HBox();
         hBoxempty.setPrefHeight(35);
+        hBoxempty.getChildren().add(fileChooserBtn);
+        hBoxempty.setAlignment(Pos.CENTER);
+
         HBox hboxInput = new HBox();
         hboxInput.setSpacing(10);
         hboxInput.getChildren().addAll(nameInput, pathInput, urlInput);
