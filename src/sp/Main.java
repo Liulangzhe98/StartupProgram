@@ -19,7 +19,6 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main extends Application
@@ -31,7 +30,7 @@ public class Main extends Application
     Button[] buttons, EditBtn;
     Button addBtn, deleteBtn,
            selectBtn, deselectBtn,
-           acceptBtn, renamePresetsBtn,
+           acceptBtn, renamePresetsBtn, editPresetBtn,
            backBtn, fileChooserBtn ;
     TextField nameInput, pathInput, urlInput;
     TextField [] inputs;
@@ -105,6 +104,9 @@ public class Main extends Application
 
         renamePresetsBtn = new Button("Clear presets list");
         renamePresetsBtn.setOnAction(e -> deletePresetButtonClicked());
+
+        editPresetBtn = new Button("Edit preset names");
+        editPresetBtn.setOnAction(e -> editPresetButtonClicked());
 
         fileChooserBtn = new Button("Get the path of your program");
         fileChooserBtn.setOnAction(e -> {
@@ -266,7 +268,8 @@ public class Main extends Application
         rightSide.getChildren().addAll(EditBtn);
 
         HBox top = new HBox();
-        top.getChildren().add(renamePresetsBtn);
+        top.getChildren().addAll(editPresetBtn,renamePresetsBtn);
+        top.setSpacing(10);
         top.setAlignment(Pos.CENTER);
         top.setPadding(new Insets(2.5));
 
@@ -345,7 +348,7 @@ public class Main extends Application
             for (int i = 0; i < programSelected.size(); i++)
             {
                 String test = programSelected.toString().split(",")[i].replace("[", "").replace("]", "").trim().split("  ")[0];
-                replacer(test, "");
+                replacer(test, "", tekstfolder.getPath());
             }
             programSelected.forEach(allPrograms::remove);
         }
@@ -434,52 +437,6 @@ public class Main extends Application
         window.setScene(sceneMain);
         window.setTitle("Startup Program: " + "MAIN");
     }
-
-
-    //Set preset Names
-    public void acceptButtonClicked()
-    {
-        for (TextField input : inputs)
-        {
-            if (isInteger(input.getText()))
-            {
-                writeToPresetFile(input.getText());
-            }
-            else
-            {
-                writeToPresetFile(input.getText());
-            }
-        }
-        try
-        {
-            //Start a new .jar file
-            rt.exec("cmd /c start " +Reference.MAIN);
-            window.close();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
-
-
-    //Resetting names of the presets
-    public void deletePresetButtonClicked()
-    {
-        presetFolder.delete();
-        try
-        {
-            presetFolder.createNewFile();
-        } catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        window.close();
-        window.setScene(sceneStart);
-        window.show();
-
-    }
-
 
     public void myListenerOpening(int btnNum, String Presetname)
     {
@@ -597,6 +554,71 @@ public class Main extends Application
         {
             e.printStackTrace();
         }
+    }
+
+
+    /* Presets
+    //Set preset Names */
+    public void acceptButtonClicked()
+    {
+        for (TextField input : inputs)
+        {
+            if (isInteger(input.getText()))
+            {
+                writeToPresetFile(input.getText());
+            }
+            else
+            {
+                writeToPresetFile(input.getText());
+            }
+        }
+        try
+        {
+            //Start a new .jar file
+            rt.exec("cmd /c start " +Reference.MAIN);
+            window.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+
+    //Resetting names of the presets
+    public void deletePresetButtonClicked()
+    {
+        presetFolder.delete();
+        try
+        {
+            presetFolder.createNewFile();
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        window.close();
+        window.setScene(sceneStart);
+        window.show();
+
+    }
+
+    //Resetting names of the presets
+    public void editPresetButtonClicked()
+    {
+        for(int i = 0; i < inputs.length; i++)
+        {
+            final int j = i;
+            inputs[i].setText(buttons[j].getText());
+            inputs[i].setOnKeyPressed(keyEvent ->
+            {
+                if (keyEvent.getCode() == KeyCode.ENTER)
+                    acceptButtonClicked();
+            });
+            replacer(buttons[i].getText(), inputs[i].getText(), presetFolder.getPath());
+        }
+        window.close();
+        window.setScene(sceneStart);
+        window.show();
     }
 
 
@@ -814,12 +836,12 @@ public class Main extends Application
 
 
     //Replace specific words/lines from a file
-    public void replacer(String Old, String New)
+    public void replacer(String Old, String New, String path)
     {
 
         try {
             // input the file content to the String "input"
-            BufferedReader file = new BufferedReader(new FileReader(Reference.TEKSTFOLDER));
+            BufferedReader file = new BufferedReader(new FileReader(path));
             FileOutputStream fileOut = new FileOutputStream(Reference.TESTFOLDER);
             String line;
             String input = "";
@@ -837,8 +859,9 @@ public class Main extends Application
             fileOut.close();
             file.close();
 
-            tekstfolder.delete();
-            testFolder.renameTo(tekstfolder);
+            File Temp = new File(path);
+            Temp.delete();
+            testFolder.renameTo(Temp);
         }
         catch (Exception e)
         {
