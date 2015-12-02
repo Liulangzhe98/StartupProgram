@@ -1,1 +1,1 @@
-Test  [TS, OBS, Twitch, WoT, Test]
+Test  [TS, OBS, WoT, Test, Twitch]

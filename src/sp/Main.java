@@ -717,26 +717,39 @@ public class Main extends Application
             FileOutputStream fileOut = new FileOutputStream(Reference.TEMPFOLDER);
             while ((line = file.readLine()) != null)
             {
+                String Temp = line.split("\\[")[1].replace("]","");
+                for (int i = 0; i < Temp.length(); i++)
+                {
+                    if (Temp.charAt(i) == ',')
+                    {
+                        commas++;
+                    }
+                }
                 input += line + "\n";
                 if(line.startsWith(PresetName) && !line.contains("["))
                 {
-                    System.out.println("INP old "+ input);
                     input = input.replace(line, PresetName + "  " + Progs);
-                    System.out.println("INP new " + input);
                 }
                 else if(line.startsWith(PresetName) && line.contains("["))
                 {
-
-                    Templst.add(line.split("\\[")[1].replace("]",""));
+                    for (int i = 0; i < commas+1; i++)
+                    {
+                        Templst.add(line.split("\\[")[1].split(",|]")[i].trim());
+                    }
+                    System.out.println("ARRAY: " + Arrays.toString(Templst.toArray()));
                     for (int i = 0; i < Progs.size(); i++)
                     {
-                        Templst.add(Progs.toString().split(", ")[i].replaceAll("[\\[\\]  ]",""));
+                        System.out.println("CON: " + Progs.get(i));
+                        System.out.println("CON2: " + Templst.contains(Progs.get(i)));
+                        if(!Templst.contains(Progs.get(i)))
+                        {
+                            Templst.add(Progs.toString().split(", ")[i].replaceAll("[\\[\\]  ]",""));
+                        }
                     }
                     input = input.replace(line, PresetName + "  " + Templst.toString());
                     System.out.println("INPUT: " + input);
                 }
             }
-            System.out.println("ARRAY: " + Arrays.toString(Templst.toArray()));
             fileOut.write(input.getBytes());
             fileOut.close();
             file.close();

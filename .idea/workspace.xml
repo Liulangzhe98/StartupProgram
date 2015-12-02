@@ -30,12 +30,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18994413">
-              <caret line="706" column="36" selection-start-line="706" selection-start-column="36" selection-end-line="706" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.82821226">
+              <caret line="743" column="59" selection-start-line="743" selection-start-column="59" selection-end-line="743" selection-end-column="59" />
               <folding>
                 <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
                 <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
-                <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
                 <element signature="method#alertBox#0;class#Main#0" expanded="false" />
                 <element signature="method#isInteger#0;class#Main#0" expanded="false" />
               </folding>
@@ -563,8 +562,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -574,7 +573,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.2997312" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1439" y="666" width="945" height="322" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.2997312" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1439" y="666" width="945" height="322" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.103151865" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -633,7 +632,6 @@
           <folding>
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
-            <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
           </folding>
@@ -701,7 +699,6 @@
           <folding>
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
-            <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
           </folding>
@@ -769,7 +766,6 @@
           <folding>
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
-            <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
           </folding>
@@ -837,7 +833,6 @@
           <folding>
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
-            <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
           </folding>
@@ -904,7 +899,6 @@
           <folding>
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
-            <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
           </folding>
@@ -971,7 +965,6 @@
           <folding>
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
-            <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
           </folding>
@@ -1091,12 +1084,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18994413">
-          <caret line="706" column="36" selection-start-line="706" selection-start-column="36" selection-end-line="706" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.82821226">
+          <caret line="743" column="59" selection-start-line="743" selection-start-column="59" selection-end-line="743" selection-end-column="59" />
           <folding>
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
-            <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
           </folding>
