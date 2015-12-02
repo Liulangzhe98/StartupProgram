@@ -45,7 +45,7 @@ public class Main extends Application
 
     final FileChooser fileChooser = new FileChooser();
     int buttonheight;
-    int inputscnt;
+    int inputscnt, commas;
     boolean stringGev = false;
     Runtime rt = Runtime.getRuntime();
     String setSelected = "The selected programs for";
@@ -431,12 +431,15 @@ public class Main extends Application
 
 
     //Go back a scene
-    //TODO: Make it so i can use it multiple times, not only for table -> main
     public void backButtonClicked()
     {
+        pathInput.clear();
+        nameInput.clear();
+        urlInput.clear();
         window.setScene(sceneMain);
         window.setTitle("Startup Program: " + "MAIN");
     }
+
 
     public void myListenerOpening(int btnNum, String Presetname)
     {
@@ -510,7 +513,6 @@ public class Main extends Application
                     file2.close();
                 }
             }
-
             if(commas == 0)
             {
                 System.out.println("Program: " + program1);
@@ -548,7 +550,6 @@ public class Main extends Application
                 }
                 file2.close();
             }
-
         }
         catch (Exception e)
         {
@@ -703,19 +704,20 @@ public class Main extends Application
     }
 
 
+    //TODO: BUG WITH DOUBLE ENABLING
     //Write selected programs to the right Preset in Presets.txt
     public void writeSelected(String PresetName,  List<String> Progs)
     {
+        List<String> Templst = new ArrayList<>();
+        String line;
+        String input = "";
         try
         {
             BufferedReader file = new BufferedReader(new FileReader(Reference.PRESETFOLDER));
             FileOutputStream fileOut = new FileOutputStream(Reference.TEMPFOLDER);
-            String line;
-            String input = "";
             while ((line = file.readLine()) != null)
             {
                 input += line + "\n";
-                System.out.println(line.startsWith(PresetName) && !line.contains("["));
                 if(line.startsWith(PresetName) && !line.contains("["))
                 {
                     System.out.println("INP old "+ input);
@@ -724,26 +726,17 @@ public class Main extends Application
                 }
                 else if(line.startsWith(PresetName) && line.contains("["))
                 {
-                    String Temp = line.split("\\[")[1].replace("]","");
-                    String Tempnew;
+
+                    Templst.add(line.split("\\[")[1].replace("]",""));
                     for (int i = 0; i < Progs.size(); i++)
                     {
-                        String TempProgs = Progs.toString().split(", ")[i].replace("[","").replace("]","");
-                        if(!Temp.contains(TempProgs))
-                        {
-                            Temp = Temp + ", " + TempProgs;
-                            System.out.println(Temp);
-                        }
-
+                        Templst.add(Progs.toString().split(", ")[i].replaceAll("[\\[\\]  ]",""));
                     }
-                    if(!Temp.contains("["))
-                    {
-                        Temp = "[" + Temp + "]";
-                    }
-                    input = input.replace(line, PresetName + "  " + Temp);
+                    input = input.replace(line, PresetName + "  " + Templst.toString());
                     System.out.println("INPUT: " + input);
                 }
             }
+            System.out.println("ARRAY: " + Arrays.toString(Templst.toArray()));
             fileOut.write(input.getBytes());
             fileOut.close();
             file.close();
@@ -759,10 +752,11 @@ public class Main extends Application
     //Remove selected programs from the right Preset in Presets.txt
     public void writeDeselected(String PresetName,  List<String> Progs)
     {
-        try {
-            // input the file content to the String "input"
+        try
+        {
             BufferedReader file = new BufferedReader(new FileReader(Reference.PRESETFOLDER));
             FileOutputStream fileOut = new FileOutputStream(Reference.TEMPFOLDER);
+            List <String> Templst = new ArrayList<>();
             String line;
             String input = "";
             while ((line = file.readLine()) != null)
@@ -771,24 +765,35 @@ public class Main extends Application
                 if(line.startsWith(PresetName) && line.contains("["))
                 {
                     String Temp = line.split("\\[")[1].replace("]","");
-                    for (int i = 0; i < Progs.size(); i++)
+                    for (int i = 0; i < Temp.length(); i++)
                     {
-                        String TempProgs = Progs.toString().split(", ")[i].replace("[", "").replace("]", "");
-                        if (Temp.contains(TempProgs))
+                        if (Temp.charAt(i) == ',')
                         {
-                            if(line.contains(TempProgs+ ","))
+                            commas++;
+                        }
+                    }
+                    for (int i = 0; i < commas+1; i++)
+                    {
+                        Templst.add(line.split("\\[")[1].split(",|]")[i].trim());
+                    }
+                    System.out.println("TeSi: "+ Templst.size());
+                    System.out.println("PrSi: "+ Progs.size());
+                    for (int i = 0; i < Templst.size(); i++)
+                    {
+
+                        for (int j = 0; j < Progs.size(); j++)
+                        {
+                            if(Templst.get(i).equals(Progs.get(j)))
                             {
-                                Temp = Temp.replace(TempProgs + ", ", "");
-                            }
-                            if(!line.contains(TempProgs+","))
-                            {
-                                Temp = Temp.replace(TempProgs, "");
+                                System.out.println(Templst.get(i).equals(Progs.get(j)));
+                                Templst.remove(i);
                             }
                         }
                     }
-                    input = input.replace(line, PresetName + "  " + "[" + Temp + "]");
+                    input = input.replace(line, PresetName +"  "+ Arrays.toString(Templst.toArray()));
                     if(input.contains("[]"))
                         input = input.replace("[]","");
+                    System.out.println("OUT: "+input);
                 }
             }
             fileOut.write(input.getBytes());
@@ -815,7 +820,6 @@ public class Main extends Application
             while ((line = file.readLine()) != null)
             {
                 input += line + "\n";
-                System.out.println(line.startsWith(PresetName));
                 if(line.startsWith(PresetName) && line.contains("["))
                 {
                     SelectedProgsForPreset.setText(setSelected + " " +line.toString().split("\\[")[0]+ ": " + line.toString().split("\\[")[1].replace("]",""));

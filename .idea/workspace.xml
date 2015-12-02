@@ -30,38 +30,14 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33519554">
-              <caret line="606" column="4" selection-start-line="606" selection-start-column="4" selection-end-line="606" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.18994413">
+              <caret line="706" column="36" selection-start-line="706" selection-start-column="36" selection-end-line="706" selection-end-column="36" />
               <folding>
-                <element signature="method#start#0;class#Main#0" expanded="false" />
-                <element signature="e#1805#1829#0" expanded="false" />
-                <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
-                <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-                <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
-                <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
                 <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
-                <element signature="method#myListenerOpening#0;class#Main#0" expanded="false" />
-                <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
-                <element signature="method#deletePresetButtonClicked#0;class#Main#0" expanded="false" />
-                <element signature="method#editPresetButtonClicked#0;class#Main#0" expanded="false" />
-                <element signature="method#getPrograms#0;class#Main#0" expanded="false" />
-                <element signature="method#writeToTextFile#0;class#Main#0" expanded="false" />
                 <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
                 <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
-                <element signature="method#writeDeselected#0;class#Main#0" expanded="false" />
-                <element signature="method#setSelectedProgsForPreset#0;class#Main#0" expanded="false" />
-                <element signature="method#replacer#0;class#Main#0" expanded="false" />
                 <element signature="method#alertBox#0;class#Main#0" expanded="false" />
                 <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-                <marker date="1448727696295" expanded="false" signature="3947:5114" placeholder="..." />
-                <marker date="1448727696295" expanded="false" signature="5153:6227" placeholder="..." />
-                <marker date="1448727696295" expanded="false" signature="5721:6008" placeholder="..." />
-                <marker date="1448727696295" expanded="false" signature="6243:6796" placeholder="..." />
-                <marker date="1448727696295" expanded="false" signature="6831:8514" placeholder="..." />
-                <marker date="1448727696295" expanded="false" signature="8577:8841" placeholder="..." />
-                <marker date="1448727696295" expanded="false" signature="8878:9659" placeholder="..." />
-                <marker date="1448727696295" expanded="false" signature="9697:10897" placeholder="..." />
-                <marker date="1448727696295" expanded="false" signature="10942:11430" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -83,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/out/artifacts/StartupADAM_jar/Files/Presets.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/out/artifacts/StartupADAM_jar/Files/text.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,7 +80,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2722#2723#0" expanded="false" />
+                <element signature="e#2772#2773#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -199,7 +179,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -315,7 +295,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -583,7 +563,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -594,7 +574,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.2997312" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1439" y="671" width="945" height="317" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.2997312" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1439" y="666" width="945" height="322" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.103151865" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -638,40 +618,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sp/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="158" column="42" selection-start-line="158" selection-start-column="42" selection-end-line="158" selection-end-column="42" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#1805#1829#0" expanded="false" />
-            <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#myListenerOpening#0;class#Main#0" expanded="false" />
-            <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deletePresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#editPresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#getPrograms#0;class#Main#0" expanded="false" />
-            <element signature="method#writeToTextFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
-            <element signature="method#writeDeselected#0;class#Main#0" expanded="false" />
-            <element signature="method#setSelectedProgsForPreset#0;class#Main#0" expanded="false" />
-            <element signature="method#replacer#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-            <marker date="1448727696295" expanded="false" signature="3947:5114" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5153:6227" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5721:6008" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6243:6796" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6831:8514" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8577:8841" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8878:9659" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="9697:10897" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="10942:11430" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -706,7 +670,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2722#2723#0" expanded="false" />
+            <element signature="e#2772#2773#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sp/MyFileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sp/Reference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="158" column="42" selection-start-line="158" selection-start-column="42" selection-end-line="158" selection-end-column="42" />
+          <folding>
+            <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
+            <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
+            <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
+            <element signature="method#alertBox#0;class#Main#0" expanded="false" />
+            <element signature="method#isInteger#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sp/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="method#Program#1;class#Program#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/StartupADAM_jar/Files/Presets.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/StartupADAM_jar/Files/text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sp/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2722#2723#0" expanded="false" />
+            <element signature="e#2772#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -731,35 +767,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#1805#1829#0" expanded="false" />
-            <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#myListenerOpening#0;class#Main#0" expanded="false" />
-            <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deletePresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#editPresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#getPrograms#0;class#Main#0" expanded="false" />
-            <element signature="method#writeToTextFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
-            <element signature="method#writeDeselected#0;class#Main#0" expanded="false" />
-            <element signature="method#setSelectedProgsForPreset#0;class#Main#0" expanded="false" />
-            <element signature="method#replacer#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-            <marker date="1448727696295" expanded="false" signature="3947:5114" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5153:6227" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5721:6008" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6243:6796" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6831:8514" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8577:8841" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8878:9659" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="9697:10897" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="10942:11430" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -794,7 +806,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2722#2723#0" expanded="false" />
+            <element signature="e#2772#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -819,35 +835,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#1805#1829#0" expanded="false" />
-            <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#myListenerOpening#0;class#Main#0" expanded="false" />
-            <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deletePresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#editPresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#getPrograms#0;class#Main#0" expanded="false" />
-            <element signature="method#writeToTextFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
-            <element signature="method#writeDeselected#0;class#Main#0" expanded="false" />
-            <element signature="method#setSelectedProgsForPreset#0;class#Main#0" expanded="false" />
-            <element signature="method#replacer#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-            <marker date="1448727696295" expanded="false" signature="3947:5114" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5153:6227" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5721:6008" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6243:6796" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6831:8514" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8577:8841" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8878:9659" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="9697:10897" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="10942:11430" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -881,7 +873,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2722#2723#0" expanded="false" />
+            <element signature="e#2772#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -906,35 +902,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#1805#1829#0" expanded="false" />
-            <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#myListenerOpening#0;class#Main#0" expanded="false" />
-            <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deletePresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#editPresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#getPrograms#0;class#Main#0" expanded="false" />
-            <element signature="method#writeToTextFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
-            <element signature="method#writeDeselected#0;class#Main#0" expanded="false" />
-            <element signature="method#setSelectedProgsForPreset#0;class#Main#0" expanded="false" />
-            <element signature="method#replacer#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-            <marker date="1448727696295" expanded="false" signature="3947:5114" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5153:6227" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5721:6008" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6243:6796" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6831:8514" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8577:8841" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8878:9659" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="9697:10897" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="10942:11430" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -968,7 +940,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2722#2723#0" expanded="false" />
+            <element signature="e#2772#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -993,35 +969,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#1805#1829#0" expanded="false" />
-            <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#myListenerOpening#0;class#Main#0" expanded="false" />
-            <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deletePresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#editPresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#getPrograms#0;class#Main#0" expanded="false" />
-            <element signature="method#writeToTextFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
-            <element signature="method#writeDeselected#0;class#Main#0" expanded="false" />
-            <element signature="method#setSelectedProgsForPreset#0;class#Main#0" expanded="false" />
-            <element signature="method#replacer#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-            <marker date="1448727696295" expanded="false" signature="3947:5114" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5153:6227" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5721:6008" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6243:6796" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6831:8514" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8577:8841" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8878:9659" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="9697:10897" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="10942:11430" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1030,7 +982,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2722#2723#0" expanded="false" />
+            <element signature="e#2772#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,7 +1010,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2722#2723#0" expanded="false" />
+            <element signature="e#2772#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,16 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sp/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="method#Program#1;class#Program#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sp/text.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1116,53 +1066,39 @@
     <entry file="file://$PROJECT_DIR$/out/artifacts/StartupADAM_jar/Files/text.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sp/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="method#Program#1;class#Program#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/StartupADAM_jar/Files/Presets.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33519554">
-          <caret line="606" column="4" selection-start-line="606" selection-start-column="4" selection-end-line="606" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.18994413">
+          <caret line="706" column="36" selection-start-line="706" selection-start-column="36" selection-end-line="706" selection-end-column="36" />
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#1805#1829#0" expanded="false" />
-            <element signature="method#deleteButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#addButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#selectButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deselectButtonClicked#0;class#Main#0" expanded="false" />
             <element signature="method#backButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#myListenerOpening#0;class#Main#0" expanded="false" />
-            <element signature="method#acceptButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#deletePresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#editPresetButtonClicked#0;class#Main#0" expanded="false" />
-            <element signature="method#getPrograms#0;class#Main#0" expanded="false" />
-            <element signature="method#writeToTextFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeToPresetFile#0;class#Main#0" expanded="false" />
             <element signature="method#writeSelected#0;class#Main#0" expanded="false" />
-            <element signature="method#writeDeselected#0;class#Main#0" expanded="false" />
-            <element signature="method#setSelectedProgsForPreset#0;class#Main#0" expanded="false" />
-            <element signature="method#replacer#0;class#Main#0" expanded="false" />
             <element signature="method#alertBox#0;class#Main#0" expanded="false" />
             <element signature="method#isInteger#0;class#Main#0" expanded="false" />
-            <marker date="1448727696295" expanded="false" signature="3947:5114" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5153:6227" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="5721:6008" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6243:6796" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="6831:8514" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8577:8841" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="8878:9659" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="9697:10897" placeholder="..." />
-            <marker date="1448727696295" expanded="false" signature="10942:11430" placeholder="..." />
           </folding>
         </state>
       </provider>

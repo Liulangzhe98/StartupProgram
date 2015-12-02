@@ -1,0 +1,5 @@
+TS  "C:\Users\Gebruiker\AppData\Local\TeamSpeak 3 Client\ts3client_win64.exe"  not set  
+OBS  "C:\Program Files (x86)\OBS\OBS.exe"  not set  
+Twitch  "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"  twitch.tv/aldjay  
+WoT  "C:\Games\World_of_Tanks\WoTLauncher.exe"  not setTest  "asbdjaksdbk"  not set  
+Test  "hasdjibasjidas"  not set  
